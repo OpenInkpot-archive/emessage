@@ -1,0 +1,63 @@
+styles {
+    style {
+        name, "textblock_style";
+        base, "font=sans-serif font_size=24 align=middle valign=middle color=#000 wrap=word";
+    }
+}
+
+collections {
+    group {
+        name, "emessage";
+        parts {
+            part {
+                name, "background";
+                type, RECT;
+                description {
+                    state, "default" 0.0;
+                    color, 255 255 255 255;
+                    rel1 {
+                        relative, 0.0 0.0;
+                        offset, 0 0;
+                    }
+                    rel2 {
+                        relative, 1.0 1.0;
+                        offset, -1 -1;
+                    }
+                }
+            }
+            part {
+                name, "hint";
+                type, TEXT;
+                description {
+                    state, "default" 0.0;
+                    color, 0 0 0 255;
+                    text {
+                        font, "sans-serif";
+                        size, 12;
+                        text, "Press “OK” to close";
+                        min, 1 1;
+                    }
+                    rel1 { relative, 1.0 1.0; offset, -10 -10; }
+                    rel2 { relative, 1.0 1.0; offset, -10 -10; }
+                    align, 1.0 1.0;
+                }
+            }
+            part {
+                name, "message";
+                type, TEXTBLOCK;
+                multiline, 1;
+                description {
+                    state, "default" 0.0;
+                    color, 0 0 0 255;
+                    text {
+                        style, "textblock_style";
+                        text, "БЗЗЗЗЗЗ blzzzz";
+                        max, 0 1;
+                    }
+                    rel1 { relative, 0.0 0.0; offset, 20 0; }
+                    rel2 { relative, 1.0 1.0; offset, -21 -1; }
+                }
+            }
+        }
+    }
+}

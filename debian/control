@@ -1,0 +1,14 @@
+Source: emessage
+Section: gui
+Maintainer: Mikhail Gusarov <dottedmag@dottedmag.net>
+Build-Depends: debhelper (>= 7), autoconf, automake, pkg-config, libecore-dev, libevas-dev, libedje-dev
+XCS-Cross-Host-Build-Depends: debhelper (>= 7), autoconf, automake, pkg-config
+XCS-Cross-Build-Depends: libecore-dev, libevas-dev, libedje-dev
+Priority: optional
+Standards-Version: 3.8.3
+
+Package: emessage
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: emergency GUI message displayer
+ In case of emergency use emessage to show something to user.
