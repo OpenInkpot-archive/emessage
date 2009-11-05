@@ -1,7 +1,7 @@
 styles {
     style {
         name, "textblock_style";
-        base, "font=sans-serif font_size=24 align=middle valign=middle color=#000 wrap=word";
+        base, "font=sans-serif font_size=32 align=middle valign=middle color=#000 wrap=word";
     }
 }
 
@@ -33,7 +33,7 @@ collections {
                     color, 0 0 0 255;
                     text {
                         font, "sans-serif";
-                        size, 12;
+                        size, 18;
                         text, "Press “OK” to close";
                         min, 1 1;
                     }
@@ -51,7 +51,7 @@ collections {
                     color, 0 0 0 255;
                     text {
                         style, "textblock_style";
-                        text, "БЗЗЗЗЗЗ blzzzz";
+                        text, "";
                         max, 0 1;
                     }
                     rel1 { relative, 0.0 0.0; offset, 20 0; }
