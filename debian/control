@@ -12,3 +12,12 @@ Architecture: any
 Depends: ${shlibs:Depends}
 Description: emergency GUI message displayer
  In case of emergency use emessage to show something to user.
+
+Package: emessage-dbg
+Architecture: any
+Section: debug
+Depends: emessage (= ${binary:Version})
+Description: emergency GUI message displayer -- debug
+ In case of emergency use emessage to show something to user.
+ .
+ This package contains debugging information.
