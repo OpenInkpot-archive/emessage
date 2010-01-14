@@ -58,10 +58,8 @@ main(int argc, char **argv)
         return 1;
     }
 
-    if (!evas_init())
-        errx(1, "Unable to initialize Evas\n");
-    if (!ecore_init())
-        errx(1, "Unable to initialize Ecore\n");
+    if (!ecore_x_init(NULL))
+        errx(1, "Unable to initialize Ecore_X, maybe missing DISPLAY\n");
     if (!ecore_evas_init())
         errx(1, "Unable to initialize Ecore_Evas\n");
     if (!edje_init())
@@ -98,8 +96,7 @@ main(int argc, char **argv)
 
     edje_shutdown();
     ecore_evas_shutdown();
-    ecore_shutdown();
-    evas_shutdown();
+    ecore_x_shutdown();
 
     return 0;
 }
