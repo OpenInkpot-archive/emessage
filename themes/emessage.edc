@@ -2,6 +2,7 @@ styles {
     style {
         name, "textblock_style";
         base, "font=sans-serif font_size=32 align=middle valign=middle color=#000 wrap=word";
+        tag: "br"         "+ \n";
     }
 }
 
