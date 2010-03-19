@@ -1,5 +1,5 @@
 /*
- * Copyright © 2009 Mikhail Gusarov <dottedmag@dottedmag.net>
+ * Copyright © 2009,2010 Mikhail Gusarov <dottedmag@dottedmag.net>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -94,8 +94,8 @@ main(int argc, char **argv)
 
     ecore_main_loop_begin();
 
-    edje_shutdown();
     ecore_evas_shutdown();
+    edje_shutdown();
     ecore_x_shutdown();
 
     return 0;
