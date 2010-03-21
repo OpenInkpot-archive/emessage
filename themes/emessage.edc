@@ -1,8 +1,10 @@
 styles {
     style {
-        name, "textblock_style";
-        base, "font=sans-serif font_size=32 align=middle valign=middle color=#000 wrap=word";
-        tag: "br"         "+ \n";
+        name, "text";
+        base, "font=DejaVu\\ Sans\\ Condensed font_size=22 align=center color=#000 wrap=word";
+        tag, "b" "+font=DejaVu\\ Sans\\ Condensed:style=bold";
+        tag, "/b" "-";
+        tag, "br" "\n";
     }
 }
 
@@ -11,52 +13,28 @@ collections {
         name, "emessage";
         parts {
             part {
-                name, "background";
-                type, RECT;
-                description {
-                    state, "default" 0.0;
-                    color, 255 255 255 255;
-                    rel1 {
-                        relative, 0.0 0.0;
-                        offset, 0 0;
-                    }
-                    rel2 {
-                        relative, 1.0 1.0;
-                        offset, -1 -1;
-                    }
-                }
-            }
-            part {
-                name, "hint";
-                type, TEXT;
-                description {
-                    state, "default" 0.0;
-                    color, 0 0 0 255;
-                    text {
-                        font, "sans-serif";
-                        size, 18;
-                        text, "Press “OK” to close";
-                        min, 1 1;
-                    }
-                    rel1 { relative, 1.0 1.0; offset, -10 -10; }
-                    rel2 { relative, 1.0 1.0; offset, -10 -10; }
-                    align, 1.0 1.0;
-                }
-            }
-            part {
-                name, "message";
+                name, "text";
                 type, TEXTBLOCK;
                 multiline, 1;
                 description {
                     state, "default" 0.0;
-                    color, 0 0 0 255;
-                    text {
-                        style, "textblock_style";
-                        text, "";
-                        max, 0 1;
-                    }
-                    rel1 { relative, 0.0 0.0; offset, 20 0; }
-                    rel2 { relative, 1.0 1.0; offset, -21 -1; }
+                    text { style, "text"; }
+                    rel1 { offset, 0 25; }
+                }
+            }
+        }
+    }
+    group {
+        name, "icon";
+        images {
+            image, "icon-error.png" COMP;
+        }
+        parts {
+            part {
+                name, "icon";
+                description {
+                    state, "default" 0.0;
+                    image { normal, "icon-error.png"; }
                 }
             }
         }

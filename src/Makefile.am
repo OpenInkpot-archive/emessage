@@ -1,7 +1,7 @@
-INCLUDES = @EFL_CFLAGS@
-AM_CFLAGS=--std=gnu99 -Wall -DDATADIR='"$(datadir)"'
+INCLUDES = @EFL_CFLAGS@ @EOI_CFLAGS@
+AM_CFLAGS=--std=gnu99 -Wall
 
 bin_PROGRAMS = emessage
 
 emessage_SOURCES = emessage.c
-emessage_LDADD = @EFL_LIBS@
+emessage_LDADD = @EFL_LIBS@ @EOI_LIBS@

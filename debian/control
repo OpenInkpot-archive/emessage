@@ -1,9 +1,9 @@
 Source: emessage
 Section: gui
 Maintainer: Mikhail Gusarov <dottedmag@dottedmag.net>
-Build-Depends: debhelper (>= 7), autoconf, automake, pkg-config, libecore-dev, libevas-dev, libedje-dev, libedje-bin
-XCS-Cross-Host-Build-Depends: debhelper (>= 7), autoconf, automake, pkg-config, libedje-bin
-XCS-Cross-Build-Depends: libecore-dev, libevas-dev, libedje-dev
+Build-Depends: debhelper (>= 7), autoconf, automake, pkg-config, libecore-dev, libevas-dev, libeoi-dev (>= 0.3)
+XCS-Cross-Host-Build-Depends: debhelper (>= 7), autoconf, automake, pkg-config
+XCS-Cross-Build-Depends: libecore-dev, libevas-dev, libedje-dev, libeoi-dev (>= 0.3)
 Priority: optional
 Standards-Version: 3.8.3
 
