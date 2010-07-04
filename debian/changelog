@@ -1,3 +1,9 @@
+emessage (0.1.4+b1) zelazny; urgency=low
+
+  * Rebuild due to new EFL
+
+ -- Alexander Kerner <lunohod@openinkpot.org>  Sun, 04 Jul 2010 23:16:52 +0200
+
 emessage (0.1.4) zelazny; urgency=low
 
   * Use dialog from libeoi.
